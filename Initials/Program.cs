@@ -9,7 +9,7 @@ namespace Initials
             Console.WriteLine("Enter your full name as first middle last");
             string fullName = Console.ReadLine();
 
-            string initials = ReturnInitials(fullName);
+            string initials = Initials(fullName);
 
             Console.WriteLine($"Initials are - {initials}");
 
@@ -23,7 +23,7 @@ namespace Initials
         /// </summary>
         /// <param name="fullName"></param>
         /// <returns>upper case initials</returns>
-        private static string ReturnInitials(string fullName)
+        public static string Initials(string fullName)
         {
             string[] names = fullName.Split(" ");
             string initials = null;
